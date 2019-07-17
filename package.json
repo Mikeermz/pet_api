@@ -4,6 +4,7 @@
   "description": "This is my final proyect in DevF",
   "main": "app/app.js",
   "scripts": {
+    "start": "nodemon app/bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

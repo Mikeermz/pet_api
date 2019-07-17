@@ -13,7 +13,8 @@ const ENVS = {
   production: {
     db: {
       url: 'mongodb+srv://mikeermz:ManzAna14@mikee-wvjvk.mongodb.net/pets',
-    }
+    },
+    port: 8000
   }
 };
 

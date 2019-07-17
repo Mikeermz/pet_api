@@ -9,7 +9,7 @@ const router = require('./routes');
 
 const app = express();
 
-app.use(morgan('dev'));
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
 app.use(bodyParser.json());
 app.use(router);
 app.use(cors());
