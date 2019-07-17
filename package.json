@@ -1,0 +1,25 @@
+{
+  "name": "mascotas_api",
+  "version": "0.0.1",
+  "description": "This is my final proyect in DevF",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pets",
+    "animals",
+    "dogs",
+    "cats",
+    "street"
+  ],
+  "author": "Diana Medellin, Mikee Ramirez, Sergio Tello",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4",
+    "morgan": "^1.9.1"
+  }
+}
