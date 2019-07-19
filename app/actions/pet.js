@@ -6,7 +6,7 @@ const getPets = async() => Pet.find();
 
 const getPet = async(id) => Pet.findById(id);
 
-const getPetbyName = async(name) => Pet.find({ name });
+const getPetbyName = async(name) => Pet.find({ name }).populate('owner');
 
 const updatePet = (id, data) => {
   console.log(data)
