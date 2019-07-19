@@ -1,7 +1,6 @@
 const express = require('express');
 const { petCreate, allPets, onePet, onePetbyName, petUpdate, deletePet } = require('../controllers/pet');
-
-const { ownerCreate } = require('../controllers/owner')
+const { OwnerCreate, allOwners, oneOwner, OwnerUpdate, deleteOwner, oneOwnerbyName } = require('../controllers/owner');
 
 const router = express.Router();
 
@@ -17,9 +16,14 @@ router.patch('/pet/:id', petUpdate);
 router.delete('/pet/:id', deletePet);
 
 //  Owner
-router.post('/owner', ownerCreate);
+router.post('/owner', OwnerCreate);
+router.get('/owners', allOwners);
+router.get('/owner/:id', oneOwner);
+router.patch('/owner/:id', OwnerUpdate);
+router.delete('/owner/:id', deleteOwner);
 
 // Search
 router.get('/search', onePetbyName);
+router.get('/owners/search', oneOwnerbyName);
 
 module.exports = router;

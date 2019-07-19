@@ -41,8 +41,8 @@ const onePet = (req, res) => {
 
 const onePetbyName = (req, res) => {
   console.log(req.query);
-  const { name } = req.query;
-  getPetbyName(name)
+  const { Petname } = req.query;
+  getPetbyName(Petname)
     .then(
       (pet) => {
         if (!pet){
