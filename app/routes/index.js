@@ -1,6 +1,8 @@
 const express = require('express');
 const { petCreate, allPets, onePet, onePetbyName, petUpdate, deletePet } = require('../controllers/pet');
 
+const { ownerCreate } = require('../controllers/owner')
+
 const router = express.Router();
 
 router.get('/',(req,res)=>{
@@ -13,7 +15,11 @@ router.get('/pets', allPets);
 router.get('/pet/:id', onePet);
 router.patch('/pet/:id', petUpdate);
 router.delete('/pet/:id', deletePet);
-router.get('/search', onePetbyName);
 
+//  Owner
+router.post('/owner', ownerCreate);
+
+// Search
+router.get('/search', onePetbyName);
 
 module.exports = router;
