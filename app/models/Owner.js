@@ -13,4 +13,4 @@ const ownerSchema = new Schema({
   }
 }, {timestamps: true} );
 
-module.exports = mongoose.model('Owner', ownerSchema);
+module.exports = mongoose.model('owner', ownerSchema);

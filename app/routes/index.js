@@ -24,6 +24,6 @@ router.delete('/owner/:id', deleteOwner);
 
 // Search
 router.get('/search', onePetbyName);
-router.get('/owners/search', oneOwnerbyName);
+router.get('/search/owner', oneOwnerbyName);
 
 module.exports = router;
