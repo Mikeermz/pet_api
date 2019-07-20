@@ -41,8 +41,9 @@ const oneOwner = (req, res) => {
 
 const oneOwnerbyName = (req, res) => {
   console.log(req.query);
-  const { name } = req.query;
-  getOwnerbyName(name)
+  const name = req.query.name;
+  const address = req.query-address;
+  getOwnerbyName(name, address)
     .then(
       (owner) => {
         if (!owner){
